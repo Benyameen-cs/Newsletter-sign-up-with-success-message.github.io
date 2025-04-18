@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vmin;
+    background-color: rgba(5, 12, 58, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container{
+    height: 75%;
+    width: 60%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.newsletter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.newsletter-text-related-data{
+    height: 90%;
+    width: 55%;
+    background-color: green;
+}
+
+.checklist-container{
+    height: fit-content;
+    background-color: aqua;
+}
+.checklist{
+    height: 40px;
+    background-color: yellow;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-image{
+    height: 90%;
+    width: 40%;
+    background-color: red;
+}
+
+

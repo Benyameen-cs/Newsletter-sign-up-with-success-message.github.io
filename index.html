@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter-sign-up-with-success-message</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
-<body>
-    <div>
-
+<body> 
+    <div class="newsletter-container">
+        <div class="newsletter">
+        <div class="newsletter-text-related-data">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="checklist-container">
+                <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">Product discovery and building what matters</span></div>
+                <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;"> Measuring to ensure updates are a success </span></div>
+                <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">And much more!</p></div>
+            </div>
+            <div>
+                <form action="/">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="newsletter-image"></div>
+        </div>
     </div>
-
     <script src="/NewsletterLogic.js"></script>
 </body>
 </html>
