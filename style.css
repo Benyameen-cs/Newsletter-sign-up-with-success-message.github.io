@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+.container{
     height: 100vmin;
-    background-color: rgba(5, 12, 58, 0.945);
+    width: 100%;
+    background-color:  hsl(234, 29%, 20%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,7 @@ body{
 
 .newsletter-container{
     height: 75%;
-    width: 60%;
+    width: 55%;
     background-color: white;
     border-radius: 30px;
 }
@@ -30,25 +32,84 @@ body{
 .newsletter-text-related-data{
     height: 90%;
     width: 55%;
-    background-color: green;
+}
+
+.newsletter-form-container{
+    padding: 50px 80px;
 }
 
 .checklist-container{
     height: fit-content;
-    background-color: aqua;
 }
 .checklist{
-    height: 40px;
-    background-color: yellow;
+    height: 25px;
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
+.input-container{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.emailInputLabel{
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.emailInputState-1{
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 400;
+} 
+
+.emailInputState-2{
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0px 20px;
+    background-color: hsl(4, 100%, 95%);
+    color:  hsl(4, 100%, 67%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.emailErrorState-1{
+    margin-left: 128px;
+    color: white;
+}
+
+.emailErrorState-2{
+    margin-left: 128px;
+    color:  hsl(4, 100%, 67%);
+}
+
+.form-submitting-btn{
+    height: 65px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 .newsletter-image{
     height: 90%;
     width: 40%;
-    background-color: red;
+    border-radius: 10px;
+}
+
+.newsletter-success-container{
+    
 }
 
 
