@@ -2,10 +2,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 .container{
-    min-height: 100vmin;
+    height: 100vmin;
     width: 100%;
     background-color:  hsl(234, 29%, 20%);
     display: flex;
@@ -18,12 +19,9 @@
     width: 55%;
     background-color: white;
     border-radius: 30px;
-    position: relative;
-    left: 10%;
-    
 }
 .newsletter-container-hide{
-    visibility: hidden;
+    display: none;
 }
 
 .newsletter{
@@ -44,6 +42,14 @@
     padding: 50px 80px;
 }
 
+#form-heading{
+    font-size:40px; 
+    font-weight: 700;
+}
+
+#form-para{
+    margin-top: 10px;
+}
 .checklist-container{
     height: fit-content;
 }
@@ -88,12 +94,12 @@
 }
 
 .emailErrorState-1{
-    margin-left: 128px;
+    margin-left: 108px;
     color: white;
 }
 
 .emailErrorState-2{
-    margin-left: 128px;
+    margin-left: 108px;
     color:  hsl(4, 100%, 67%);
 }
 
@@ -117,20 +123,27 @@
 
 
 .newsletter-success-container{
-    
     height: 400px;
     width: 400px;
     background-color: white;
     border-radius: 10px;
-    position: relative;
-    right: 25%;
 }
 
 .newsletter-success-container-hide{
-    visibility: hidden;
+    display: none;
 }
 .newsletter-success{
     padding: 30px 65px;
+}
+
+#newsletter-success-heading{
+    font-size:40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#newsletter-success-para{
+    margin-top: 10px;
 }
 
 .dismiss-message-btn{
@@ -146,8 +159,147 @@
 
 }
 
-@media screen( max-width : 400px) {
-    
+button:hover{
+    background-color:hsl(4, 100%, 67%) ;
 }
 
+
+@media only screen and (min-width:375px) and (max-width : 600px){
+    body{
+        font-size:16px ;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+
+    .newsletter-container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .newsletter{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .newsletter-text-related-data{
+        width: 100%;
+    }
+
+    .newsletter-form-container{
+        padding: 45px;
+    }
+    
+    #form-heading{
+        font-weight: 700;
+    }
+
+    #form-para{
+        margin-top: 30px;
+    }
+
+    .checklist-container{
+        margin-top: 30px;
+    }
+    .emailInputState-1{
+        margin-top: 5px;
+    }
+    .emailErrorState-1{
+        margin-left: 50px;
+    }
+    .emailErrorState-2{
+        margin-top: 5x;
+        /* margin-left: 45px; */
+        float: right;
+    }
+
+    .form-submitting-btn{
+        margin-top: 10px;
+    }
+    .newsletter-image{
+        width: 100%;
+        height: 40%;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+
+    }
+    .newsletter-image img{
+        display: none;
+    }
+    
+
+    .newsletter-success-container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+    .newsletter-success{
+        padding: 120px 30px;
+    }
+
+
+    #newsletter-success-heading{
+        margin-top: 30px;
+    }
+    #newsletter-success-para{
+        margin-top: 30px;
+    }
+
+    .dismiss-message-btn{
+        margin-top: 260px;
+    }
+
+
+}
+
+@media only screen and (min-width:760px) and (max-width:1435px){
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .newsletter-container{
+        width: 80%;
+        height: 75%;
+    }
+    .newsletter{
+        height: 100%;
+        width: 100%;
+    }
+    .newsletter-text-related-data{
+        height: 100%;
+        width: 55%;
+    }
+    .newsletter-form-container{
+        padding: 80px 30px;
+    }
+    
+    #form-heading{
+        margin-top: 30px;
+    }
+
+    #form-para{
+        margin-top: 20px;
+    }
+
+    .checklist-container{
+        margin-top: 15px;
+    }
+    .emailErrorState-1{
+        margin-left: 50px;
+    }
+    .emailErrorState-2{
+        /* margin-left: 17%; */
+        float: right;
+    }
+    .newsletter-image{
+        height: 100%;
+        min-width: 45%;
+    }
+}
 

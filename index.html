@@ -9,40 +9,40 @@
 </head>
 <body> 
     <div class="container">
-    <div class="newsletter-container" id="newsletter-container">
-        <div class="newsletter">
-        <div class="newsletter-text-related-data">
-            <form  class="newsletter-form-container"  action="/">
-                <h1 style="font-size:40px; font-weight: 700;">Stay updated!</h1>
-                <p style="margin-top: 10px;">Join 60,000+ product managers receiving monthly updates on:</p>
-                <div class="checklist-container">
-                    <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">Product discovery and building what matters</span></div>
-                    <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;"> Measuring to ensure updates are a success </span></div>
-                    <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">And much more!</p></div>
+        <div class="newsletter-container" id="newsletter-container">
+            <div class="newsletter">
+                <div class="newsletter-text-related-data">
+                    <form  class="newsletter-form-container"  action="/">
+                        <h1 id="form-heading" >Stay updated!</h1>
+                        <p  id="form-para">Join 60,000+ product managers receiving monthly updates on:</p>
+                        <div class="checklist-container">
+                            <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">Product discovery and building what matters</span></div>
+                            <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;"> Measuring to ensure updates are a success </span></div>
+                            <div class="checklist"><span><img src="./assets/images/icon-list.svg" width="20px" height="20px" ></span> <span style="margin-left: 10px;">And much more!</p></div>
+                        </div>
+                        <div class="input-container">
+                            <div>
+                                <label for="emailInput" class="emailInpuutLabel">Email address</label>
+                                <span   id ="emailErrorMsg" class="emailErrorState-1">Valid email required</span>
+                            </div>
+                            <input type="email" class="emailInputState-1" id="emailInput" placeholder="email@example.com" value="" required>
+                        </div>
+                        <button class="form-submitting-btn" type="submit" id="newsletterFormBtn">Subscribe to monthly newsletter</button>
+                    </form>
                 </div>
-                <div class="input-container">
-                    <div>
-                        <label for="emailInput" class="emailInpuutLabel">Email address</label>
-                        <span   id ="emailErrorMsg" class="emailErrorState-1">Valid email required</span>
-                    </div>
-                    <input type="email" class="emailInputState-1" id="emailInput" placeholder="email@example.com" value="" required>
+                <div class="newsletter-image">
+                    <img src="./assets/images/illustration-sign-up-desktop.svg" width="100%" height="100%" >
                 </div>
-                <button class="form-submitting-btn" type="submit" id="newsletterFormBtn">Subscribe to monthly newsletter</button>
-            </form>
+            </div>
         </div>
-        <div class="newsletter-image">
-            <img src="./assets/images/illustration-sign-up-desktop.svg" width="100%" height="100%" >
+        <div class="newsletter-success-container newsletter-success-container-hide" id="newsletter-success-container">
+            <div class="newsletter-success">
+                <div><img src="./assets/images/icon-list.svg" width="50px" height="50px" ></div>
+                <h1 id="newsletter-success-heading" >Thanks for subscribing!</h1>
+                <p  id="newsletter-success-para">A confirmation email has been sent to  <span id="showEmail" style="font-weight: bold;"></span>.  Please open it and click the button inside to confirm your subscription.</p>
+                <button class="dismiss-message-btn" id="dismiss-message">Dismiss message</button>
+            </div>
         </div>
-        </div>
-    </div>
-    <div class="newsletter-success-container newsletter-success-container-hide" id="newsletter-success-container">
-    <div class="newsletter-success">
-        <div><img src="./assets/images/icon-list.svg" width="50px" height="50px" ></div>
-        <h1 style="font-size:40px; font-weight: 700; margin-top: 10px;">Thanks for subscribing!</h1>
-        <p style="margin-top: 10px;">A confirmation email has been sent to  <span id="showEmail" style="font-weight: bold;"></span>.  Please open it and click the button inside to confirm your subscription.</p>
-        <button class="dismiss-message-btn" id="dismiss-message">Dismiss message</button>
-    </div>
-    </div>
     </div>
     <script src="/NewsletterLogic.js"></script>
 </body>
