@@ -94,12 +94,14 @@
 }
 
 .emailErrorState-1{
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    float: right;
     color: white;
 }
 
 .emailErrorState-2{
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    float: right;
     color:  hsl(4, 100%, 67%);
 }
 
