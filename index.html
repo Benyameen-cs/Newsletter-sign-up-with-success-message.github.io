@@ -9,7 +9,7 @@
 </head>
 <body> 
     <div class="container">
-    <div class="newsletter-container">
+    <div class="newsletter-container" id="newsletter-container">
         <div class="newsletter">
         <div class="newsletter-text-related-data">
             <form  class="newsletter-form-container"  action="/">
@@ -25,9 +25,9 @@
                         <label for="emailInput" class="emailInpuutLabel">Email address</label>
                         <span   id ="emailErrorMsg" class="emailErrorState-1">Valid email required</span>
                     </div>
-                    <input type="email" class="emailInputState-1" id="emailInput" placeholder="email@example.com" required>
+                    <input type="email" class="emailInputState-1" id="emailInput" placeholder="email@example.com" value="" required>
                 </div>
-                <button class="form-submitting-btn" id="newsletterFormBtn">Subscribe to monthly newsletter</button>
+                <button class="form-submitting-btn" type="submit" id="newsletterFormBtn">Subscribe to monthly newsletter</button>
             </form>
         </div>
         <div class="newsletter-image">
@@ -35,8 +35,13 @@
         </div>
         </div>
     </div>
-    <div class="newsletter-success-container">
+    <div class="newsletter-success-container newsletter-success-container-hide" id="newsletter-success-container">
+    <div class="newsletter-success">
         <div><img src="./assets/images/icon-list.svg" width="50px" height="50px" ></div>
+        <h1 style="font-size:40px; font-weight: 700; margin-top: 10px;">Thanks for subscribing!</h1>
+        <p style="margin-top: 10px;">A confirmation email has been sent to  <span id="showEmail" style="font-weight: bold;"></span>.  Please open it and click the button inside to confirm your subscription.</p>
+        <button class="dismiss-message-btn" id="dismiss-message">Dismiss message</button>
+    </div>
     </div>
     </div>
     <script src="/NewsletterLogic.js"></script>
